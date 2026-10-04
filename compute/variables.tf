@@ -15,7 +15,7 @@ variable "environment" {
 
 variable "instance_type" {
   description = "AWS EC2 instance type."
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 variable "department" {
