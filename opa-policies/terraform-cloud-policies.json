@@ -1,0 +1,28 @@
+{
+  "policies": [
+    {
+      "name": "enforce-instance-type",
+      "query": "data.terraform.policies.enforce_instance_type.deny",
+      "path": "policies/enforce-instance-type.rego",
+      "enforcement_level": "hard-mandatory"
+    },
+    {
+      "name": "enforce-tags",
+      "query": "data.terraform.policies.enforce_tags.deny",
+      "path": "policies/enforce-tags.rego",
+      "enforcement_level": "hard-mandatory"
+    },
+    {
+      "name": "enforce-region",
+      "query": "data.terraform.policies.enforce_region.deny",
+      "path": "policies/enforce-region.rego",
+      "enforcement_level": "hard-mandatory"
+    },
+    {
+      "name": "deny-unrestricted-ssh",
+      "query": "data.terraform.policies.deny_unrestricted_ssh.deny",
+      "path": "policies/deny-unrestricted-ssh.rego",
+      "enforcement_level": "hard-mandatory"
+    }
+  ]
+}
