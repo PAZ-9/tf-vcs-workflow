@@ -1,6 +1,6 @@
 variable "region" {
   description = "The AWS region where resources are created."
-  default     = "ap-southeast-1"
+  default     = "eu-west-2"
 }
 
 variable "prefix" {
